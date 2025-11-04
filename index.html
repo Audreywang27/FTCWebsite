@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="tabs.css">
+    <link rel="stylesheet" type="text/css" href="robot-gal.css">
+    <title>The Golden Horde</title>
+</head>
+<body>
+
+    <button class="tablink" onclick="openPage('Home', this, 'black')">Home</button>
+     <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+    <button class="tablink" onclick="openPage('robot-gallery', this, 'black')" id="defaultOpen">Robot Gallery</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+
+
+<div id="Home" class="tabcontent">
+    <h1>The Golden Horde</h1>
+    <h2>Team 32228</h2>
+    
+    
+    <div class = "slideshow">
+        <div class = "image-slideshow">
+            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 204927.png" alt = "hi">
+            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 205051.png" alt = "hi">
+            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 213459.png" alt = "hi">
+            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 213522.png" alt = "hi">
+        </div>
+        <div>
+            <img id = "logo"src = "slideshow/Screenshot 2025-11-03 203618.png" alt = "hi">
+        </div>
+    </div>
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About us</h3>
+
+  <div class = "about-us">
+    <div></div>
+    <p id = "teamIntroduction"> 
+        The Golden Horde is a first year FTC team located in Solon, Ohio. Majority of our members are novices, so we are welcoming  a season of growth and new experiences! Previously, a few of our members were part of team 20385, The Abundant Sheep, so their knowledge and experience have really helped our team design and build our robot. 
+    </p>
+    <div></div>
+  </div>
+
+  
+
+
+
+</div>
+
+<div id="robot-gallery" class="tabcontent">
+  <h3>Robot gallery</h3>
+  
+    <div class="container">
+        <div>
+           <img src = "gallerypics/Screenshot 2025-11-02 204927.png">
+        </div>
+        <div>
+           <img src = "gallerypics/Screenshot 2025-11-02 205051.png">
+        </div>
+        <div>
+           <img src = "gallerypics/Screenshot 2025-11-02 213459.png">
+        </div>
+        <div>
+           <img src = "gallerypics/Screenshot 2025-11-02 213522.png">
+        </div>
+        <div>
+            <img src = "gallerypics/Screenshot 2025-11-02 213539.png">
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+  <p>.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+    <script src="tab.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>
