@@ -1,0 +1,25 @@
+.footer{
+    background-color: #555;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 1rem;
+    width: 100%;
+    position: relative; /* Add this */
+    margin-top: 5vh; /* Add space above */
+    clear: both;
+}
+/*.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 14px 16px;
+  height: 9vh; 
+  padding:1vh; 
+  background-color: #555;
+  color: white;
+  text-align: center;
+}
+*/

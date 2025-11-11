@@ -20,6 +20,24 @@ function openPage(pageName, elmnt, color) {
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
+  /*  if (pageName === 'robot-gallery') {
+
+    showSlides('first-slideshow');
+    showSlides('second-slideshow');
+    showSlides('third-slideshow');
+
+  }*/
+ if (pageName === 'robot-gallery') {
+  setTimeout(() => {
+    slideIndexes['first-slideshow'] = 1;
+    slideIndexes['second-slideshow'] = 1;
+    slideIndexes['third-slideshow'] = 1;
+
+    showSlides('first-slideshow');
+    showSlides('second-slideshow');
+    showSlides('third-slideshow');
+  }, 100);
+}
 }
 
 // Get the element with id="defaultOpen" and click on it

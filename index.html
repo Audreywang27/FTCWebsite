@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="tabs.css">
     <link rel="stylesheet" type="text/css" href="robot-gal.css">
+
     <title>The Golden Horde</title>
 </head>
 <body>
@@ -20,14 +23,14 @@
     <h1>The Golden Horde</h1>
     <h2>Team 32228</h2>
     
-    
     <div class = "slideshow">
         <div class = "image-slideshow">
-            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 204927.png" alt = "hi">
-            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 205051.png" alt = "hi">
-            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 213459.png" alt = "hi">
-            <img class = "mySlides"  src = "slideshow/Screenshot 2025-11-02 213522.png" alt = "hi">
+            <img class = "mySlides-home"  src = "slideshow/Screenshot 2025-11-02 204927.png" alt = "hi">
+            <img class = "mySlides-home"  src = "slideshow/Screenshot 2025-11-02 205051.png" alt = "hi">
+            <img class = "mySlides-home"  src = "slideshow/Screenshot 2025-11-02 213459.png" alt = "hi">
+            <img class = "mySlides-home"  src = "slideshow/Screenshot 2025-11-02 213522.png" alt = "hi">
         </div>
+
         <div>
             <img id = "logo"src = "slideshow/Screenshot 2025-11-03 203618.png" alt = "hi">
         </div>
@@ -36,7 +39,8 @@
 </div>
 
 <div id="About" class="tabcontent">
-  <h3>About us</h3>
+  <h3>About Us</h3>
+  <hr>
 
   <div class = "about-us">
     <div></div>
@@ -46,41 +50,86 @@
     <div></div>
   </div>
 
-  
-
-
-
 </div>
 
 <div id="robot-gallery" class="tabcontent">
-  <h3>Robot gallery</h3>
-  
-    <div class="container">
-        <div>
-           <img src = "gallerypics/Screenshot 2025-11-02 204927.png">
-        </div>
-        <div>
-           <img src = "gallerypics/Screenshot 2025-11-02 205051.png">
-        </div>
-        <div>
-           <img src = "gallerypics/Screenshot 2025-11-02 213459.png">
-        </div>
-        <div>
-           <img src = "gallerypics/Screenshot 2025-11-02 213522.png">
-        </div>
-        <div>
-            <img src = "gallerypics/Screenshot 2025-11-02 213539.png">
-        </div>
-        <div>
+  <h3>Robot Gallery</h3>
+  <hr>
+    <div class = "gallery-grid">
+      <div id = "first-slideshow" class="slideshow-container" >
+        <div class = "titles"id = "first-title">Robot Build</div>
 
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
+          <div class="text first-cap" >Caption Text</div>
         </div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
+          <div class="text first-cap">Caption Two</div>
+        </div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
+          <div class="text first-cap">Caption Three</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 'first-slideshow')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'first-slideshow')">&#10095;</a>
     </div>
 
+    <div id = "second-slideshow" class="slideshow-container" >
+        <div class = "titles" id = "second-title">CAD</div>
+
+        <div class="mySlides-gallery fade">
+          <img src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
+          <div class="text second-cap">Caption Text</div>
+        </div>
+
+        <div class="mySlides-gallery fade">
+          <img src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
+          <div class="text second-cap">Caption Two</div>
+        </div>
+
+        <div class="mySlides-gallery fade">
+          <img src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
+          <div class="text second-cap">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 'second-slideshow')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'second-slideshow')">&#10095;</a>
+      </div>
+    </div>
+
+    <div class = "gallery-grid">
+      <div id = "third-slideshow" class="slideshow-container" >
+        <div class = "titles" id = "third-title">Design</div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
+          <div class="text third-cap" >Caption Text</div>
+        </div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
+          <div class="text third-cap">Caption Two</div>
+        </div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
+          <div class="text third-cap">Caption Three</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 'first-slideshow')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'first-slideshow')">&#10095;</a>
+    </div>
   <p>.</p>
 </div>
 
 <div id="Contact" class="tabcontent">
   <h3>Contact</h3>
+  <hr>
   <p>Who we are and what we do.</p>
 </div>
 
@@ -88,7 +137,8 @@
   <p>Footer</p>
 </div>
 
-    <script src="tab.js"></script>
-    <script src="slides.js"></script>
+    <script src="autoslides.js"></script>
+    <script src = "manualslides.js"></script>
+        <script src="tab.js"></script>
 </body>
 </html>
