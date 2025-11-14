@@ -8,14 +8,15 @@
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="tabs.css">
     <link rel="stylesheet" type="text/css" href="robot-gal.css">
+    <link rel="stylesheet" type="text/css" href="contact-gal.css">
 
     <title>The Golden Horde</title>
 </head>
 <body>
 
-    <button class="tablink" onclick="openPage('Home', this, 'black')">Home</button>
-     <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
-    <button class="tablink" onclick="openPage('robot-gallery', this, 'black')" id="defaultOpen">Robot Gallery</button>
+    <button class="tablink" onclick="openPage('Home', this, 'black')"  id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+    <button class="tablink" onclick="openPage('robot-gallery', this, 'black')">Robot Gallery</button>
     <button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
 
 
@@ -38,6 +39,7 @@
 
 </div>
 
+
 <div id="About" class="tabcontent">
   <h3>About Us</h3>
   <hr>
@@ -55,7 +57,7 @@
 <div id="robot-gallery" class="tabcontent">
   <h3>Robot Gallery</h3>
   <hr>
-    <div class = "gallery-grid">
+    <div class = "robot-grid">
       <div id = "first-slideshow" class="slideshow-container" >
         <div class = "titles"id = "first-title">Robot Build</div>
 
@@ -76,61 +78,98 @@
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1, 'first-slideshow')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'first-slideshow')">&#10095;</a>
-    </div>
-
-    <div id = "second-slideshow" class="slideshow-container" >
-        <div class = "titles" id = "second-title">CAD</div>
-
-        <div class="mySlides-gallery fade">
-          <img src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
-          <div class="text second-cap">Caption Text</div>
-        </div>
-
-        <div class="mySlides-gallery fade">
-          <img src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
-          <div class="text second-cap">Caption Two</div>
-        </div>
-
-        <div class="mySlides-gallery fade">
-          <img src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
-          <div class="text second-cap">Caption Three</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 'second-slideshow')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'second-slideshow')">&#10095;</a>
       </div>
+
+      <div id = "second-slideshow" class="slideshow-container" >
+          <div class = "titles" id = "second-title">CAD</div>
+
+          <div class="mySlides-gallery fade">
+            <img src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
+            <div class="text second-cap">Caption Text</div>
+          </div>
+
+          <div class="mySlides-gallery fade">
+            <img src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
+            <div class="text second-cap">Caption Two</div>
+          </div>
+
+          <div class="mySlides-gallery fade">
+            <img src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
+            <div class="text second-cap">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 'second-slideshow')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'second-slideshow')">&#10095;</a>
+      </div>
+
+        <div id = "third-slideshow" class="slideshow-container" >
+          <div class = "titles" id = "third-title">Design</div>
+
+          <div class="mySlides-gallery">
+            <img class = "fade" src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
+            <div class="text third-cap" >Caption Text</div>
+          </div>
+
+          <div class="mySlides-gallery">
+            <img class = "fade" src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
+            <div class="text third-cap">Caption Two</div>
+          </div>
+
+          <div class="mySlides-gallery">
+            <img class = "fade" src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
+            <div class="text third-cap">Caption Three</div>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 'first-slideshow')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'first-slideshow')">&#10095;</a>
+        </div>
     </div>
 
-    <div class = "gallery-grid">
-      <div id = "third-slideshow" class="slideshow-container" >
-        <div class = "titles" id = "third-title">Design</div>
-
-        <div class="mySlides-gallery">
-          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
-          <div class="text third-cap" >Caption Text</div>
-        </div>
-
-        <div class="mySlides-gallery">
-          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
-          <div class="text third-cap">Caption Two</div>
-        </div>
-
-        <div class="mySlides-gallery">
-          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
-          <div class="text third-cap">Caption Three</div>
-        </div>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 'first-slideshow')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'first-slideshow')">&#10095;</a>
-    </div>
-  <p>.</p>
+    
 </div>
 
 <div id="Contact" class="tabcontent">
   <h3>Contact</h3>
   <hr>
   <p>Who we are and what we do.</p>
+
+
+  <!--Need to make th textbox a direct child - then can put into grids-->
+  <div class = "contact-grid">
+      <!--Contact form iframe-->
+      <iframe 
+      class = "google-form"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSflAkewMf4mzsbgYJyl1L8amh035Tq6o8MM9osv1sz4U97jbA/viewform?embedded=true"
+      width="640" 
+      height="621" 
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">Loading…</iframe>
+
+      <div id = "fourth-slideshow" class="slideshow-container" >
+        <div class = "titles"id = "fourth-title">Robot Build</div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 204927.png" style="width:100%">
+          <div class="textBox fourth-cap" >Caption Text</div>
+        </div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 205051.png" style="width:100%">
+          <div class="textBox fourth-cap">Caption Two</div>
+        </div>
+
+        <div class="mySlides-gallery">
+          <img class = "fade" src="gallerypics/Screenshot 2025-11-02 213459.png" style="width:100%">
+          <div class="textBox fourth-cap">Caption Three</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 'fourth-slideshow')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'forth-slideshow')">&#10095;</a>
+      </div>
+    </div>
+
 </div>
 
 <div class="footer">

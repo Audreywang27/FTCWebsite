@@ -28,16 +28,28 @@ function openPage(pageName, elmnt, color) {
 
   }*/
  if (pageName === 'robot-gallery') {
-  setTimeout(() => {
-    slideIndexes['first-slideshow'] = 1;
-    slideIndexes['second-slideshow'] = 1;
-    slideIndexes['third-slideshow'] = 1;
+    setTimeout(() => {
+      slideIndexes['first-slideshow'] = 1;
+      slideIndexes['second-slideshow'] = 1;
+      slideIndexes['third-slideshow'] = 1;
 
-    showSlides('first-slideshow');
-    showSlides('second-slideshow');
-    showSlides('third-slideshow');
-  }, 100);
-}
+      showSlides('first-slideshow');
+      showSlides('second-slideshow');
+      showSlides('third-slideshow');
+    }, 100);
+  }
+
+  if (pageName === 'Contact') {
+    setTimeout(() => {
+      slideIndexes['fourth-slideshow'] = 1;
+      /*slideIndexes['second-slideshow'] = 1;
+      slideIndexes['third-slideshow'] = 1;*/
+
+      showSlides('fourth-slideshow');
+      //showSlides('second-slideshow');
+      //showSlides('third-slideshow');
+    }, 100);
+  }
 }
 
 // Get the element with id="defaultOpen" and click on it

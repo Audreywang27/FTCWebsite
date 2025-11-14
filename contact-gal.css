@@ -1,0 +1,17 @@
+.contact-grid{
+    display:grid;     
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 3vh;
+    row-gap: 5vh; 
+    padding: 5vh;
+    margin: 0 10vw; 
+}
+.textBox{
+    width:25vw; 
+}
+
+/*iframe*/
+    .google-form{
+        grid-column:2; 
+
+    }
