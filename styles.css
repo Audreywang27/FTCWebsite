@@ -23,15 +23,20 @@ h2{
 h3{
     color:rgb(255, 204, 1);
     margin-top:0px;
-    margin-bottom:0px;  
+    margin-bottom:0.5rem;  
     display:grid; 
     place-content: center; 
     font-size: 4rem; 
 }
 
+h4{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.5rem; 
+}
+
 hr{
     border-bottom: 1px dashed white; 
-    width:75%;
+    width:80%;
     margin-top: 3vh; 
 }
 
@@ -39,10 +44,6 @@ p{
     font-family: "Times New Roman", Times, serif;
     display: grid; 
     place-content: center; 
-}
-
-#teamIntroduction{
-    grid-column: 2;
 }
 
 .about-us{

@@ -27,6 +27,14 @@ function openPage(pageName, elmnt, color) {
     showSlides('third-slideshow');
 
   }*/
+
+  if(pageName === "About"){
+    setTimeout(() => {
+      slideIndexes['fourth-slideshow'] = 1; 
+
+      showSlides('fourth-slideshow');
+    })
+  }
  if (pageName === 'robot-gallery') {
     setTimeout(() => {
       slideIndexes['first-slideshow'] = 1;

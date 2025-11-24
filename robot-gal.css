@@ -26,7 +26,7 @@
   height: fit-content;
   display: block; 
   position: relative;
-  margin: auto;
+  margin: 0;
 }
 
 .mySlides-gallery {
@@ -41,27 +41,32 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  align-items:center;
+  justify-content:center;
+
 }
 
 /* Caption text */
-  .text {
+  .text{
     color: #f2f2f2;
     border-color:white; 
     border:2vw solid rgb(145, 145, 145);
-    font-size: 15px;
+    font-size: clamp(0.9vw,1vw,1.1vw);
     text-align: center;
     background-color: rgba(0,0,0,0.5);
   }
+
   /*Sizing of box*/
   .text{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     padding: 8px 12px;
     position: absolute;
     bottom: 0vh;
     width: 29.2vw; /*need to figure out how to embed text box into grid...this formatting changes depending on screen*/
     height:35vh; 
   }
-
-
 
 /*Caption placement*/
   .first-cap{
@@ -70,6 +75,10 @@
 
   .second-cap{ 
     right:34.5vw; 
+  }
+
+  #two-1{
+    font-size:0.95vw; 
   }
 
   .third-cap{
@@ -81,9 +90,9 @@
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 2.4rem;
     color: white; 
-    position: absolute;
     text-align: center;
-    width: 20vw; /* Same width as caption */
+    width: 100%; /* Same width as caption */
+    margin-bottom: 0.5rem; 
   }
 
   #first-title{
@@ -92,6 +101,15 @@
 
   #second-title{
     right: 43vw;
+  }
+
+  #onshape-logo{
+    height:100%;
+    width:100%;
+    
+    object-fit:contain;
+
+    align-content:center; 
   }
 
   #third-title{

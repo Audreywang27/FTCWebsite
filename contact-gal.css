@@ -1,17 +1,82 @@
 .contact-grid{
     display:grid;     
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 3vh;
-    row-gap: 5vh; 
-    padding: 5vh;
-    margin: 0 10vw; 
+    grid-template-columns: repeat(13, 1fr);
+    column-gap: 1vh;
+    row-gap: 1vh; 
+    padding: 1vh;
+    margin: 0; 
+
+    width:100%;
 }
-.textBox{
-    width:25vw; 
+
+.socials{
+    background-color: rgba(0,0,0,0.5);
+    color: #f2f2f2;
+    border-color:white; 
+    border:0.5vw solid rgb(145, 145, 145);
+    height:auto; 
+    width:100%; 
+    font-size: 1.4vw; 
+    padding:0.5em; 
+    word-break: break-all;
+    overflow-wrap: break-word; 
+    max-width:100%; 
+}
+
+#email{
+    grid-column:6/11; 
+    grid-row:1; 
+    height:115%; 
+
+    display: flex; 
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center;
+}
+
+#insta{
+    grid-column:6/11;
+    grid-row:2; 
+    height:80%;
+
+    display: flex; 
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center;
+}
+
+#emaily{
+    font-size: 2vw; 
+    width:fit-content;
+    margin: 0 auto;  
+}
+
+/*Linking email to actual email browser*/
+#email a {
+    color: rgb(82, 146, 255);
+}
+
+#email a:hover {
+    color: rgb(56, 69, 255); /* color when hovering */
+    text-decoration: none;
+}
+
+#instagrammy{
+    font-size: 2vw; 
+    width:fit-content; 
+    margin: 0 auto; 
 }
 
 /*iframe*/
-    .google-form{
-        grid-column:2; 
+    #google-form{
+        width:38vw;
+        height:67vh ;
+        margin-top:5vh; 
 
+        border:0.5rem solid white; 
+
+        margin-left:1vw; 
+
+        grid-column:3/4;
+        grid-row:1/span 2; 
     }
