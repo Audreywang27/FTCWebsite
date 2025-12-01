@@ -46,15 +46,6 @@ p{
     place-content: center; 
 }
 
-.about-us{
-    display: grid; 
-    grid-template-columns: repeat(3, 33vw);
-    justify-items: start; 
-    margin-left:1vw; 
-    margin-top: 10vh; 
-    gap:3vw; 
-}
-
 #logo{
     width: 30vw;
     height:50vh; 

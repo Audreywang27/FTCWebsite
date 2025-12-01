@@ -7,7 +7,7 @@
     padding: 0.2vw 2vw;
     width: 100%;
     position: relative; /* Add this */
-    margin-top: 5vh; /* Add space above */
+    margin-top: 0vh; /* Add space above */
     clear: both;
 }
 

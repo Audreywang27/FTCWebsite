@@ -1,16 +1,16 @@
 .about-grid{
     display:grid;     
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(14, 6.5vw);
     column-gap: 1vh;
     row-gap: 1vh; 
-    padding: 1vh;
+    padding: 0vh;
     margin: 0; 
 
     width:100%;
 }
 
 #teamIntroduction{
-    grid-column: 3/7;
+    grid-column: 3/8;
     grid-row:2; 
 
     color: #f2f2f2;
@@ -23,26 +23,37 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+#speaker-box{
+    grid-column: 7/12; 
+    grid-row: 4; 
+    align-self: center; 
+    width:30vw; 
+    margin-left:7vw; 
+}
+
 #teamIntroduction{
     padding: 8px 12px;
     bottom: 0vh;
     height:35vh; 
+    width:28vw; 
     align-items:center; 
 }
 
 #fourth-title{
-    grid-column:7/11; 
+    grid-column:8/13; 
     grid-row:1; 
     justify-self:center; 
+    width:100%; 
 }
 
 #team-photo{
-    grid-column:7/11; 
+    grid-column:8/13; 
     grid-row:2; 
+
+    box-sizing: border-box;
 
     justify-self:center; 
     align-self:center; 
-    margin-left:3vw; 
     
     height:45vh;
     width:30vw; 
@@ -55,19 +66,97 @@
     background-color:red; 
 }
 
+.hover-container{
+    width:10vw; 
+    height:15vw; 
+    text-align: center; 
+    position: relative; 
+}
 
-/*Slidesow stuff*/
-    #fourth-slideshow{
-        grid-column:2/8; 
-        grid-row:5; 
-        align-self:center;
+.hover-text{ /*Add team goals and stuff*/
+    display: none; 
+    position: absolute; 
+    top: 0%; 
+    width:8vw; 
+    left: 0; 
+    background-color: red; 
+    padding: 1vw; 
+    white-space: nowrap; 
+}
 
-        margin-top:2vh; 
-        margin-left:5vw; 
-    }
+.hover-container img{
+    width:10vw; 
+    height: 12vw; 
+    border-radius:50%;
+    border: 0.5vw solid rgb(145, 145, 145); 
+}
 
-    #fourth-cap{
-        width:20vw; 
-        height:15vw; 
-        margin-left:34vw; 
-    }
+.hover-container:hover .hover-text{
+    display: block; 
+}
+
+#teampics-splitter{
+    grid-row: 4; 
+    grid-column: 5/11; 
+    border-bottom: 1px dashed white; 
+    width:100%;
+    margin-top: 0vh; 
+    margin-bottom: 3vh;
+}
+
+.nametag{
+    margin-top: 0.5vw; 
+    color: black; 
+    background-color: white; 
+}
+
+#aaron{
+    grid-row: 5; 
+    grid-column:3/4; 
+}
+
+#evan{
+    grid-column: 5/6; 
+    grid-row: 5; 
+}
+
+#gabe{
+    grid-column: 7/7;
+    grid-row: 5; 
+}   
+
+#chengyu{
+    grid-column: 9/10; 
+    grid-row: 5; 
+}
+
+#henry{
+    grid-column: 11/11; 
+    grid-row: 5; 
+}
+
+#audrey{
+    grid-column: 3/4; 
+    grid-row: 7; 
+}
+
+#william{
+    grid-column: 5/6; 
+    grid-row: 7; 
+}
+
+#louis{
+    grid-column: 7/8; 
+    grid-row: 7; 
+}
+
+#chris{
+    grid-column: 9/10; 
+    grid-row: 7;
+}
+
+#eddy{
+    grid-column: 11/11; 
+    grid-row: 7;
+}
+
